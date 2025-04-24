@@ -42,9 +42,6 @@ MongoDB was exposed via a ClusterIP to backend only (secured).
 
 Frontend exposed via NodePort allowing access in a browser.
 
-### Log Cleanup:
-
-Implemented a CronJob that runs at regular intervals to clean up log files in pods.
 
 ## How to Access the App
 Visit the frontend using your browser:
