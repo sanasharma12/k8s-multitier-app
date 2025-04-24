@@ -9,17 +9,17 @@ This project demonstrates a multi-tier web application deployed on a local Kuber
 
   
 ## Project Architecture
-Frontend: Built using NGINX to serve a static UI.
+**Frontend**: Built using NGINX to serve a static UI.
 
-Backend: A Flask application that handles business logic and communicates with MongoDB.
+**Backend**: A Flask application that handles business logic and communicates with MongoDB.
 
-Database: MongoDB is used to persist and manage application data.
+**Database**: MongoDB is used to persist and manage application data.
 
 All components are containerized and run in separate pods managed by Kubernetes. The application uses:
 
-ClusterIP services for internal communication between backend and database.
+**ClusterIP** services for internal communication between backend and database.
 
-NodePort service to expose the frontend to external users.
+**NodePort** service to expose the frontend to external users.
 
 ## What’s Been Done
 ### Containerization:
@@ -56,8 +56,6 @@ The backend interacts with MongoDB internally via a ClusterIP service.
 
 ## Files in the Repo
 frontend.yaml, backend.yaml, mongodb.yaml: Define deployments.
-
-*.service.yaml: Define services to expose deployments.
 
 README.md: You’re reading it.
 
